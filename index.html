@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<title>
+		Prüfziffer GTIN
+		</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script>
+			"use strict";
+			function rechne() {
+
+         var vZ1;
+         var vZ2;
+         var vZ3;
+         var vZ4;
+         var vZ5;
+         var vZ6;
+         var vZ7;
+             
+
+		var	vN1 = document.getElementById("idZ1").value;
+		var	vN2 = document.getElementById("idZ2").value;
+		var	vN3 = document.getElementById("idZ3").value;
+		var	vN4 = document.getElementById("idZ4").value;
+		var vN5 = document.getElementById("idZ5").value;
+		var vN6 = document.getElementById("idZ6").value;
+	    var vN7 = document.getElementById("idZ7").value;
+		
+
+		var vS
+        vS = document.getElementById("idvS").value;
+
+        vE1 = vZ1 * 1
+        vE2 = vZ2 * 3
+        vE3 = vZ3 * 1
+        vE4 = vZ4 * 3
+        vE5 = vZ5 * 1
+        vE6 = vZ6 * 3
+        vE7 = vZ7 * 1
+       
+		if ([vZahl==10]) {
+
+    // 
+
+       } else {
+
+    //
+
+        vAusgabeHtml = "";
+        vAusgabeHtml = vAusgabeHtml + "Die Prüfsumme ist:63 die Prüfziffer ist:7 "
+        vAusgabeHtml = vAusgabeHtml + vZ1 + vZ2 + vZ3 + vZ4 + vZ5 + vZ6 + vZ7 
+        vAusgabeHtml = "."
+        
+        document.getElementById("idAusgabeHtml").innerHTML = vAusgabeHtml;
+    }
+					
+		</script>
+	
+</head>
+
+	<body>
+		<h1>Prüfziffer EAN</h1>
+		Europäische Artikelnummer: 
+		<input id="idZ1" type="text" maxlength="1" size="1" value="4">
+		<input id="idZ2" type="text" maxlength="1" size="1" value="2">
+		<input id="idZ3" type="text" maxlength="1" size="1" value="2">
+		<input id="idZ4" type="text" maxlength="1" size="1" value="1">
+		<input id="idZ5" type="text" maxlength="1" size="1" value="4">
+		<input id="idZ6" type="text" maxlength="1" size="1" value="3">
+		<input id="idZ7" type="text" maxlength="1" size="1" value="9">
+		
+		
+		</br> 
+		</br> 
+	<button onClick = "rechne();"Berechne GTIN Prüfziffer" </button>
+		</br> 
+		</br> 
+		<div id="idAusgabeHTML"></div>
+	</body>
+</html>
